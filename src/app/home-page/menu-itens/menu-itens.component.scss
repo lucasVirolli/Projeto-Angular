@@ -1,0 +1,93 @@
+body{
+
+  width: 99%;
+  margin-right: 0;
+
+  .carouselContainer{
+    max-width: 100%;
+    position:relative;
+    max-height: 35vw;
+
+    .imagensCarousel{
+      display: flex;
+    }
+
+ .decrescentaLopp{
+      left: 50px;
+    }
+
+    .acrescentaLopp{
+      right: 50px;
+    }
+
+    img{
+      max-height: 35vw;
+      min-width: 99vw;
+      max-width: 100%;
+    }
+  }
+
+  .produtosContainer{
+
+    max-width: 100vw;
+
+    .carouselProdutosContainer{
+      min-height: 32em;
+      max-height: 32em;
+      background-color: red;
+      display: flex;
+      position: relative;
+      max-width: 100%;
+
+      .produtosCarousel-wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        overflow-x: hidden;
+        margin-right: 30px;
+
+        .produtosCarousel{
+          min-height: 29em;
+          max-height: 29em;
+          background-color: white;
+          // position: relative;
+          margin-left: 20px;
+          margin-top: 20px;
+          right: 20px;
+        }
+
+      }
+
+      .decrescentaLopp{
+        left: 8px;
+      }
+
+      .acrescentaLopp{
+        right: 20px;
+      }
+
+      img{
+        min-width: 260px;
+        max-width: 260px;
+
+        min-height: 260px;
+        max-height: 260px;
+      }
+    }
+
+
+  }
+
+
+}
+
+button{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  opacity: 0.7;
+  bottom: calc(50% - 70px);
+  position: absolute;
+
+}
+
+

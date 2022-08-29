@@ -1,0 +1,65 @@
+{
+  "brincos": [
+    {
+      "id": 1,
+      "tpMaterial": "ouro",
+      "novidade": true,
+      "tamanho": "grande",
+      "contemPedra": false,
+      "tpBrinco": "argola",
+      "valor": 115.83,
+      "qtdEstoque": 10,
+      "promocaoPorc": 5,
+      "outlet": false,
+      "localImg": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "nomeProduto": "Brinco Argola, ouro 18kkkkkkkkkkkkkk",
+      "descricaoProduto": "Material feito de ouro, argola tamanho médio. Apenas aqui completando para testarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+    },
+    {
+      "id": 2,
+      "tpMaterial": "prata",
+      "novidade": false,
+      "tamanho": "pequeno",
+      "contemPedra": true,
+      "tpBrinco": "flor",
+      "valor": 80.73,
+      "qtdEstoque": 15,
+      "promocaoPorc": 0,
+      "outlet": true,
+      "localImg": "../assets/imgs/homerSimpsons.jpg",
+      "nomeProduto": "Brinco estilo flor, prata",
+      "descricaoProduto": "Material feito de prata, decorativo flor tamanho médio. Apenas aqui completando para testar"
+    }
+  ],
+
+  "colares": [
+    {
+      "id": 1,
+      "tpMaterial": "ouro",
+      "novidade": true,
+      "tamanho": "20cm",
+      "contemPedra": false,
+      "valor": 15.15,
+      "qtdEstoque": 3,
+      "promocaoPorc": 15,
+      "outlet": false,
+      "localImg": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "nomeProduto": "Colar de ouro 18k",
+      "descricaoProduto": "Material feito de ouro. Apenas aqui completando para testar Apenas aqui completando para testar Apenas aqui completando para testar"
+    },
+    {
+      "id": 2,
+      "tpMaterial": "prata",
+      "novidade": false,
+      "tamanho": "pequeno",
+      "contemPedra": true,
+      "valor": 70.75,
+      "qtdEstoque": 18,
+      "promocaoPorc": 0,
+      "outlet": true,
+      "localImg": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+      "nomeProduto": "Colar Prata",
+      "descricaoProduto": "Material feito de prata, decorativo flor tamanho médio. Apenas aqui completando para testar Apenas aqui completando para testar Apenas aqui completando para testar Apenas aqui completando para testar"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<body>
+  <div class="topo">
+    <mat-form-field class="pesquiseItem" appearance="outline">
+      <mat-label>Pesquise por um item <mat-icon>search</mat-icon>
+      </mat-label>
+      <input matInput>
+    </mat-form-field>
+    <nav>
+      <a routerLink="/home" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
+        <mat-icon class="iconHomePage" (click)="acessaHomePage($event)">home</mat-icon>
+
+      </a>
+    </nav>
+
+    <img src="../../../assets/logo.png" />
+
+    <div class="iconesNavigation">
+      <mat-icon>face</mat-icon>
+      <mat-icon>favorite</mat-icon>
+      <mat-icon>shopping_cart</mat-icon>
+    </div>
+  </div>
+
+  <nav mat-tab-nav-bar mat-align-tabs="center" (click)="capturaSessaoSelecionado($event)">
+    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.link" routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+      {{link.label}}
+    </a>
+  </nav>
+
+  <div class="gridMaisCard">
+
+    <app-grid-filtro-lateral *ngIf="!homePageSelecionado" [novidadesSelecionado]="novidadesSelecionado"
+      [colaresSelecionado]="colaresSelecionado" [brincosSelecionado]="brincosSelecionado"
+      [aneisSelecionado]="aneisSelecionado" [pulseirasSelecionado]="pulseirasSelecionado"
+      [outletSelecionado]="outletSelecionado">
+    </app-grid-filtro-lateral>
+
+    <app-conteudo-principal *ngIf="!homePageSelecionado" [novidadesSelecionado]="novidadesSelecionado"
+      [colaresSelecionado]="colaresSelecionado" [brincosSelecionado]="brincosSelecionado"
+      [aneisSelecionado]="aneisSelecionado" [pulseirasSelecionado]="pulseirasSelecionado"
+      [outletSelecionado]="outletSelecionado">
+    </app-conteudo-principal>
+
+    <router-outlet></router-outlet>
+  </div>
+
+</body>

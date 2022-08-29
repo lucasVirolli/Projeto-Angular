@@ -1,0 +1,29 @@
+body{
+  width: 100%;
+  height: fit-content;
+
+}
+
+.textoFrete{
+  display: flex;
+  justify-content: center;
+  height: 2em;
+  font-size: 1.2em;
+  background-color: rgba(77, 199, 199, 0.473);
+
+  p{
+    margin-top: 0.4em;
+  }
+
+  .material-symbols-sharp {
+    margin-top: 0.2em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+
+
+}
+
+
+
+

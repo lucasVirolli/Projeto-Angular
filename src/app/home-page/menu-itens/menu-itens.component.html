@@ -1,0 +1,173 @@
+<body>
+  <div class="carouselContainer">
+    <button class="decrescentaLopp" (click)="decrementaCarousel()">
+      - </button>
+
+    <span class="imagensCarousel" *ngFor="let imagem of imagensCarousel">
+
+      <img *ngIf="imagem.exibir" [src]="imagem.local" />
+
+    </span>
+
+    <button class="acrescentaLopp" (click)="incrementaCarousel()">
+      +
+    </button>
+  </div>
+
+  <div class="produtosContainer">
+    <h2>Novidades</h2>
+
+    <div class="carouselProdutosContainer">
+      <button class="decrescentaLopp" (click)="decrementaCarouselProdutos()">
+        - </button>
+      <div class="produtosCarousel-wrapper">
+        <span class="produtosCarousel" *ngFor="let produto of novidades">
+          <div class="teste" *ngIf="produto.exibirCarousel">
+            <img [src]="produto.local" />
+            <h4>Produto {{produto.id}} - feito em ouro 18k</h4>
+            <p>R$ 250,00</p>
+            <p> - ou em até 5x R$50,00 s/ juros</p>
+
+            <p>Clique para mais detalhes</p>
+          </div>
+
+        </span>
+
+      </div>
+      <button class="acrescentaLopp" (click)="incrementaCarouselProdutos()">
+        +
+      </button>
+    </div>
+  </div>
+
+  <div class="produtosContainer">
+    <h2>Colares</h2>
+
+    <div class="carouselProdutosContainer">
+      <button class="decrescentaLopp" (click)="decrementaCarouselProdutos()">
+        - </button>
+      <div class="produtosCarousel-wrapper">
+        <span class="produtosCarousel" *ngFor="let produto of novidades">
+          <div class="teste" *ngIf="produto.exibirCarousel">
+            <img [src]="produto.local" />
+            <h4>Produto {{produto.id}} - feito em ouro 18k</h4>
+            <p>R$ 250,00</p>
+            <p> - ou em até 5x R$50,00 s/ juros</p>
+
+            <p>Clique para mais detalhes</p>
+          </div>
+
+        </span>
+
+      </div>
+      <button class="acrescentaLopp" (click)="incrementaCarouselProdutos()">
+        +
+      </button>
+    </div>
+  </div>
+
+  <div class="produtosContainer">
+    <h2>Brincos</h2>
+
+    <div class="carouselProdutosContainer">
+      <button class="decrescentaLopp" (click)="decrementaCarouselProdutos()">
+        - </button>
+      <div class="produtosCarousel-wrapper">
+        <span class="produtosCarousel" *ngFor="let produto of novidades">
+          <div class="teste" *ngIf="produto.exibirCarousel">
+            <img [src]="produto.local" />
+            <h4>Produto {{produto.id}} - feito em ouro 18k</h4>
+            <p>R$ 250,00</p>
+            <p> - ou em até 5x R$50,00 s/ juros</p>
+
+            <p>Clique para mais detalhes</p>
+          </div>
+
+        </span>
+
+      </div>
+      <button class="acrescentaLopp" (click)="incrementaCarouselProdutos()">
+        +
+      </button>
+    </div>
+  </div>
+
+  <div class="produtosContainer">
+    <h2>Anéis</h2>
+
+    <div class="carouselProdutosContainer">
+      <button class="decrescentaLopp" (click)="decrementaCarouselProdutos()">
+        - </button>
+      <div class="produtosCarousel-wrapper">
+        <span class="produtosCarousel" *ngFor="let produto of novidades">
+          <div class="teste" *ngIf="produto.exibirCarousel">
+            <img [src]="produto.local" />
+            <h4>Produto {{produto.id}} - feito em ouro 18k</h4>
+            <p>R$ 250,00</p>
+            <p> - ou em até 5x R$50,00 s/ juros</p>
+
+            <p>Clique para mais detalhes</p>
+          </div>
+
+        </span>
+
+      </div>
+      <button class="acrescentaLopp" (click)="incrementaCarouselProdutos()">
+        +
+      </button>
+    </div>
+  </div>
+
+  <div class="produtosContainer">
+    <h2>Pulseiras</h2>
+
+    <div class="carouselProdutosContainer">
+      <button class="decrescentaLopp" (click)="decrementaCarouselProdutos()">
+        - </button>
+      <div class="produtosCarousel-wrapper">
+        <span class="produtosCarousel" *ngFor="let produto of novidades">
+          <div class="teste" *ngIf="produto.exibirCarousel">
+            <img [src]="produto.local" />
+            <h4>Produto {{produto.id}} - feito em ouro 18k</h4>
+            <p>R$ 250,00</p>
+            <p> - ou em até 5x R$50,00 s/ juros</p>
+
+            <p>Clique para mais detalhes</p>
+          </div>
+
+        </span>
+
+      </div>
+      <button class="acrescentaLopp" (click)="incrementaCarouselProdutos()">
+        +
+      </button>
+    </div>
+  </div>
+
+  <div class="produtosContainer">
+    <h2>Outlet</h2>
+
+    <div class="carouselProdutosContainer">
+      <button class="decrescentaLopp" (click)="decrementaCarouselProdutos()">
+        - </button>
+      <div class="produtosCarousel-wrapper">
+        <span class="produtosCarousel" *ngFor="let produto of novidades">
+          <div class="teste" *ngIf="produto.exibirCarousel">
+            <img [src]="produto.local" />
+            <h4>Produto {{produto.id}} - feito em ouro 18k</h4>
+            <p>R$ 250,00</p>
+            <p> - ou em até 5x R$50,00 s/ juros</p>
+
+            <p>Clique para mais detalhes</p>
+          </div>
+
+        </span>
+
+      </div>
+      <button class="acrescentaLopp" (click)="incrementaCarouselProdutos()">
+        +
+      </button>
+    </div>
+  </div>
+
+</body>

@@ -1,0 +1,53 @@
+<body>
+  <section *ngIf="novidadesSelecionado"  class="example-section" [formGroup]="tpAcessorio">
+    <h4 class="topicoFiltro">ESCOLHA UM ACESSÓRIO</h4>
+    <p class="itensCb"><mat-checkbox formControlName="colares" (change)="capturaCbSelecionados($event)">Colares</mat-checkbox></p>
+    <p class="itensCb"><mat-checkbox formControlName="brincos" (change)="capturaCbSelecionados($event)">Brincos</mat-checkbox></p>
+    <p class="itensCb"><mat-checkbox formControlName="aneis" (change)="capturaCbSelecionados($event)">Aneis</mat-checkbox></p>
+    <p class="itensCb"><mat-checkbox formControlName="pulseiras" (change)="capturaCbSelecionados($event)">Pulseiras</mat-checkbox></p>
+  </section>
+
+  <section *ngIf="novidadesSelecionado || colaresSelecionado || brincosSelecionado || aneisSelecionado || pulseirasSelecionado || outletSelecionado"  class="campoFiltro" [formGroup]="tpMaterial">
+    <h4 class="topicoFiltro">ESCOLHA UM MATERIAL</h4>
+
+    <p class="itensCb"><mat-checkbox formControlName="ouro" (change)="capturaCbSelecionados($event)">Ouro</mat-checkbox></p>
+
+    <p class="itensCb"><mat-checkbox formControlName="banhadoOuro" (change)="capturaCbSelecionados($event)">Banhado em ouro</mat-checkbox></p>
+
+    <p class="itensCb"><mat-checkbox formControlName="folheadoOuro" (change)="capturaCbSelecionados($event)">Folheado em ouro</mat-checkbox></p>
+
+    <p class="itensCb"><mat-checkbox formControlName="prata" (change)="capturaCbSelecionados($event)">Prata</mat-checkbox></p>
+  </section>
+
+  <section *ngIf="novidadesSelecionado || colaresSelecionado || brincosSelecionado || aneisSelecionado || pulseirasSelecionado || outletSelecionado"  class="campoFiltro" [formGroup]="pedrasYOrN">
+    <div>
+      <h4 class="topicoFiltro">COM PEDRAS?</h4>
+
+      <p class="itensCb"><mat-checkbox formControlName="comPedras" (change)="capturaCbSelecionados($event)">Sim</mat-checkbox></p>
+
+      <p class="itensCb"><mat-checkbox formControlName="semPedras" (change)="capturaCbSelecionados($event)">Não</mat-checkbox></p>
+    </div>
+
+  </section>
+
+  <section *ngIf="exibirPedras"  class="campoFiltro" [formGroup]="tpPedras">
+    <h4 class="topicoFiltro">TIPOS DE PEDRA</h4>
+
+    <p class="itensCb"><mat-checkbox formControlName="esmeralda" (change)="capturaCbSelecionados($event)">esmeralda</mat-checkbox></p>
+
+    <p class="itensCb"><mat-checkbox formControlName="perola" (change)="capturaCbSelecionados($event)">perola</mat-checkbox></p>
+
+    <p class="itensCb"><mat-checkbox formControlName="rubi" (change)="capturaCbSelecionados($event)">rubi</mat-checkbox></p>
+
+    <p class="itensCb"><mat-checkbox formControlName="safira" (change)="capturaCbSelecionados($event)">safira</mat-checkbox></p>
+  </section>
+
+  <!-- <section *ngIf="novidadesSelecionado" class="campoFiltro" [formGroup]="tpMaterial">
+    <h4>You chose:</h4>
+    <p>{{tpMaterial.value | json}}</p>
+    {{tpAcessorio.value | json}}
+    {{pedrasYOrN.value | json}}
+    {{tpPedras.value | json}}
+  </section> -->
+
+</body>

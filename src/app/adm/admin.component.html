@@ -1,0 +1,44 @@
+<body>
+  <div class="">
+    <h3>Clique em um botão para decidir o que quer alterar:
+    </h3>
+
+    <div class="">
+      <button>Produtos</button>
+      <button>Carrosel Principal</button>
+      <button>Carrosel secundário</button>
+      <button>Grid Lateral (filtros de produtos)</button>
+    </div>
+
+    <div class="">
+      <section [formGroup]="tpAcessorios">
+        <p>
+          <mat-checkbox formControlName="novidades" (change)="capturaCbSelecionados($event)">Novidades</mat-checkbox>
+        </p>
+        <p>
+          <mat-checkbox formControlName="colares" (change)="capturaCbSelecionados($event)">Colares</mat-checkbox>
+        </p>
+        <p>
+          <mat-checkbox formControlName="brincos"  (change)="capturaCbSelecionados($event)">Brincos</mat-checkbox>
+        </p>
+        <p>
+          <mat-checkbox formControlName="aneis" (change)="capturaCbSelecionados($event)">Aneis</mat-checkbox>
+        </p>
+        <p>
+          <mat-checkbox formControlName="pulseiras"  (change)="capturaCbSelecionados($event)">Pulseiras</mat-checkbox>
+        </p>
+        <p>
+          <mat-checkbox formControlName="outlet"  (change)="capturaCbSelecionados($event)">Outlet</mat-checkbox>
+        </p>
+      </section>
+    </div>
+
+
+
+
+  </div>
+  <app-conteudo-principal></app-conteudo-principal>
+
+
+</body>
+

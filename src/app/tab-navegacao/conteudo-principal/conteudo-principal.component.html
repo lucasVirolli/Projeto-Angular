@@ -1,0 +1,294 @@
+<body>
+
+  <div class="containerProdutos">
+    <div *ngIf="colaresSelecionado || colaresAdminSelecionado">
+      <mat-card class="cardItens" *ngFor="let produto of colares">
+        <img mat-card-image src={{produto.localImg}} />
+        <mat-card-content>
+          <div class="titleJoia">
+            <h3>{{produto.nomeProduto}}</h3>
+          </div>
+
+          <div class="descricao">
+            <p>
+              {{produto.descricaoProduto}}
+            </p>
+          </div>
+
+
+          <div class="marcadores">
+            <p>#Ouro 18k</p>
+            <p>#Rubi</p>
+            <p>#Novidades</p>
+            <p>#tamanho 15, 16, 17, 18</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button class="comprar">COMPRAR</button>
+          <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div *ngIf="brincosSelecionado">
+      <mat-card class="cardItens" *ngFor="let produto of brincos">
+        <img mat-card-image src={{produto.localImg}} />
+        <mat-card-content>
+          <div class="titleJoia">
+            <h3>{{produto.nomeProduto}}</h3>
+          </div>
+
+          <div class="descricao">
+            <p>
+              {{produto.descricaoProduto}}
+            </p>
+          </div>
+
+
+          <div class="marcadores">
+            <p>#Ouro 18k</p>
+            <p>#Rubi</p>
+            <p>#Novidades</p>
+            <p>#tamanho 15, 16, 17, 18</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button class="comprar">COMPRAR</button>
+          <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+
+
+  <!-- <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="cardItens">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3 class="titleJoia">TITULO DA JOIA</h3>
+
+      <p class="descricao">
+        Descrição da jóia hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+        hahahahahahhahahahahahahahahahahahahahaahahahahahahaha
+      </p>
+
+      <div class="marcadores">
+        <p>#Ouro 18k</p>
+        <p>#Rubi</p>
+        <p>#Novidades</p>
+        <p>#tamanho 15, 16, 17, 18</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="comprar">COMPRAR</button>
+      <button mat-button class="carrinho">COLOCAR NO CARRINHO</button>
+    </mat-card-actions>
+  </mat-card> -->
+</body>
